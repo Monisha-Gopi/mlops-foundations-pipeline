@@ -10,7 +10,9 @@ def train_model():
     model = RandomForestClassifier()
     model.fit(X_train, y_train)
     y_pred = model.predict(X_test)
-    print(f"Accuracy: {accuracy_score(y_test, y_pred)}")
+    accuracy = accuracy_score(y_test, y_pred)
+    print(f"Accuracy: {accuracy}")
+
     return model
 
 
