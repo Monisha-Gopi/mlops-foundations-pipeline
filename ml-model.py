@@ -1,5 +1,5 @@
 # Import libraries
-#import pandas as pd
+# import pandas as pd
 from sklearn.datasets import load_iris
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -25,7 +25,8 @@ y_pred = model.predict(X_test)
 
 # Evaluate the model accuracy
 accuracy = accuracy_score(y_test, y_pred)
-print(f"Accuracy: {accuracy * 100:.2f}%")
+accuracy_str = f"Accuracy: {accuracy * 100:.2f}%"
+print(accuracy_str)
 
 # Plot feature importance (which features are most important for predictions)
 feature_importance = model.feature_importances_
